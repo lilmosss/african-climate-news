@@ -203,13 +203,7 @@ df_map_full = df_geo.merge(
 
 
 # Fill missing values
-df_map_full["total_articles"] = df_map_full["total_articles"].fillna(0)
-st.write(
-    df_map_full[
-        (df_map_full["Population"].isna()) |
-        (df_map_full["GDP"].isna())
-    ][["Country"]]
-)
+
 
 
 
